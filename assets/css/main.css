@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.top_header {
+  background-color: #ABD373;
+  display: none;
+}
+
+#slider {
+  background-color: #F8EEE5;
+}
+
+.custom_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding-top: 80px;
+}
+
+.slider_summary .discount {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.slider_summary .slider_text {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.slider_summary .description {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.slider_summary .slider_btn {
+  background-color: #ABD373;
+  padding: 20px 40px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .slider {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .slider img {
+    width: 80%;
+  }
+}
+
+.features {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 0 25px;
+}
+
+.features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 7px;
+  max-width: 370px;
+  height: 108px;
+  border: 1px dashed #ABD373;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 0 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-item i {
+  font-size: 50px;
+  color: #ABD373;
+}
+
+.features-item .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.features-item .description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1002px) {
+  .features {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features .features-item {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features .features-item {
+    max-width: 600px;
+  }
+}
+
+.products_text {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+.products_filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.products_filters button {
+  background-color: #fff;
+  padding: 16px 35px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #6b6b6b;
+  -webkit-transition: color 0.5s , background-color 0.5s , border 0.5s;
+  transition: color 0.5s , background-color 0.5s , border 0.5s;
+  cursor: pointer;
+}
+
+.products_filters button:hover {
+  padding: 16px 35px;
+  background-color: #fff;
+  border: 1px dashed #ABD373;
+  color: #ABD373;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.products_filters button.active {
+  padding: 16px 35px;
+  background-color: #fff;
+  border: 1px dashed #ABD373;
+  color: #ABD373;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

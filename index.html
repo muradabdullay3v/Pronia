@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/main.js" defer></script>
+    <title>Pronia</title>
+</head>
+
+<body>
+    <header>
+        <div class="top_header">
+            <div class="top_header_summary">HELLO EVERYONE! 25% OFF ALL PRODUCTS</div>
+            <div class="header-dropdowns">
+                <div class="header-dropdowns-item">
+                    <button class="currency_btn">USD</button>
+                    <div class="header-dropdown_content">
+                        <button>ISO</button>
+                        <button>GBP</button>
+                    </div>
+                </div>
+                <div class="header-dropdowns-item">
+                    <button class="language_btn">ENGLISH</button>
+                    <div class="header-dropdown_content">
+                        <button>French</button>
+                        <button>Italian</button>
+                        <button>Spanish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="slider">
+            <div class="custom_container">
+                <div class="slider">
+                    <div class="slider_summary">
+                        <h3 class="discount">65% OFF</h3>
+                        <h2 class="slider_text">NEW PLANT</h2>
+                        <h3 class="description">Pronia, With 100% Natural, Organic & Plant Shop.</h3>
+                        <button class="slider_btn">DISCOVER NOW</button>
+                    </div>
+                    <div class="slider_image">
+                        <img src="./assets/img/slider.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <div class="custom_container">
+                <div class="features">
+                    <div class="features-item">
+                        <div class="features_icon"><i class="fa-solid fa-truck"></i></div>
+                        <div class="features_text">
+                            <h4 class="title">Free Shipping</h4>
+                            <p class="description">Capped at $319 per order</p>
+                        </div>
+                    </div>
+                    <div class="features-item">
+                        <div class="features_icon"><i class="fa-solid fa-credit-card"></i></div>
+                        <div class="features_text">
+                            <h4 class="title">Safe Payment</h4>
+                            <p class="description">Capped at $319 per order</p>
+                        </div>
+                    </div>
+                    <div class="features-item">
+                        <div class="features_icon"><i class="fa-solid fa-envelopes-bulk"></i></div>
+                        <div class="features_text">
+                            <h4 class="title">Safe Payment</h4>
+                            <p class="description">Capped at $319 per order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <div class="products_text">
+                <h2>OUR PRODUCTS</h2>
+            </div>
+            <div class="products_filters" id="filter_btn">
+                <div class="product_filter-item">
+                    <button class="filter-button active" onclick="filterSelection('featured')">Featured</button>
+                </div>
+                <div class="product_filter-item">
+                    <button class="filter-button" onclick="filterSelection('bestseller')">
+                        Bestseller
+                    </button>
+                </div>
+                <div class="product_filter-item">
+                    <button class="filter-button" onclick="filterSelection('lastest')">Lastest</button>
+                </div>
+            </div>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+                <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+              </div>
+              
+              <div class="container">
+                <div class="filterDiv cars">
+                    
+                </div>
+              </div>
+        </section>
+    </main>
+</body>
+
+</html>
